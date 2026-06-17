@@ -1,0 +1,38 @@
+.search{
+   width: 90%;
+   border: none;
+}
+.stock{
+    list-style-type: none;
+    width: 100%;
+    font-size: 0.8rem;
+}
+.stocks{
+    margin: 0px;
+    padding-left:5px;
+    width: 100%;
+}
+.profit{
+    color:  rgb(79, 236, 79) !important;
+}
+.loss{
+    color: rgba(255, 0, 0, 0.836) !important; 
+}
+.brand{
+    font-size: 1rem;
+}
+
+.icon-btn{
+    font-size: 0.7rem;
+    background-color: rgb(98, 98, 219);
+    border: none;
+    border-radius:25%;
+}
+.material-icon{
+    border: none;
+    border-radius: 25%;
+}
+.box{
+    width: 100%;
+}
+
