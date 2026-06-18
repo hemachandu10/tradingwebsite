@@ -6,8 +6,8 @@ const app=express()
 var cors = require('cors')
 app.use(cors({
   origin: [
-    "http://localhost:5173",
-    "http://localhost:5174"
+    "https://tradingwebsite-nqtn.vercel.app/",
+    "https://tradingwebsite-mu.vercel.app/"
   ],
   credentials: true
 }));//to secure the the requests
