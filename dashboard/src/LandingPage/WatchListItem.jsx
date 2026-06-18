@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import './watchlist.css';
+import './watchList.css';
 import BuyForm from './buyForm'; 
 import SellForm from './SellForm'
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
