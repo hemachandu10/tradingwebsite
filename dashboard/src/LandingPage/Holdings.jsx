@@ -7,7 +7,7 @@ import VerticalBar from './verticalbar';
 function Holdings() {
     const [allholdings, setallholdings] = useState([])
     useEffect(() => {
-        axios.get("http://localhost:8080/allholdings").then((res) => { setallholdings(res.data) });
+        axios.get("https://tradingwebsite-8qfx.onrender.com/allholdings").then((res) => { setallholdings(res.data) });
     }, []);
 
     //for chatjs-2

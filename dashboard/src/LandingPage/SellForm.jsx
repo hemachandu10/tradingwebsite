@@ -7,7 +7,7 @@ function SellForm({ setSellAction,stock }) {
     async function handleSubmit(event) {
         event.preventDefault();
         console.log(quntity)
-        let response = await axios.post("http://localhost:8080/watchlist/Sell",{stock,quntity}).catch((err) => { console.log(err) });
+        let response = await axios.post("https://tradingwebsite-8qfx.onrender.com/watchlist/Sell",{stock,quntity}).catch((err) => { console.log(err) });
         //console.log(response)
         if (response.data.success) {
             setQunatity(0)

@@ -21,11 +21,11 @@ async function handleSubmit(event){
     event.preventDefault();
     console.log(data)
     
-    let response=await axios.post("http://localhost:8080/login",data).catch((err)=>{console.log(err)});
+    let response=await axios.post("https://tradingwebsite-8qfx.onrender.com/login",data).catch((err)=>{console.log(err)});
     
     //console.log(response)
     if (response.data.success) {
-      window.location.replace("http://localhost:5174/");
+      window.location.replace("https://tradingwebsite-nqtn.vercel.app/");
     } else {
       alert(response.data.message);
     }

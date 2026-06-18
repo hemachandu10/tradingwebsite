@@ -4,15 +4,15 @@ import axios from 'axios'
 
 function Menu() {
     async function logout() {
-        console.log("hi")
+        
         let response=await axios.post(
-            "http://localhost:8080/logout",
+            "https://tradingwebsite-8qfx.onrender.com/logout",
             {},
             { withCredentials: true }
         );
         console.log(response.data)
         if(response.data.success){
-            window.location.replace("http://localhost:5173/");
+            window.location.replace("https://tradingwebsite-mu.vercel.app/");
         }else{
              alert(response.data.message);
         }

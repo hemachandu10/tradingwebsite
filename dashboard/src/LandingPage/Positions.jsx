@@ -6,7 +6,7 @@ import axios from 'axios';//Axios is a popular, promise-based HTTP client used i
 function Positions() {
     const [allpositions,setallpositions]=useState([])
     useEffect(()=>{
-        axios.get("http://localhost:8080/allpositons").then((res)=>{setallpositions(res.data)})
+        axios.get("https://tradingwebsite-8qfx.onrender.com/allpositons").then((res)=>{setallpositions(res.data)})
     },[])
     return (
         <>

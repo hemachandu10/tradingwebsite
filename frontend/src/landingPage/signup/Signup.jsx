@@ -22,11 +22,11 @@ function Signup() {
     event.preventDefault();
     //console.log(data)
     
-    let response=await axios.post("http://localhost:8080/signup",data).catch((err)=>{console.log(err)});
+    let response=await axios.post("https://tradingwebsite-8qfx.onrender.com/signup",data).catch((err)=>{console.log(err)});
     
     console.log(response)
     if (response.data.isSignup) {
-      window.location.replace("http://localhost:5174/");
+      window.location.replace("https://tradingwebsite-nqtn.vercel.app/");
     } else {
       alert(response.data.message);
     }
